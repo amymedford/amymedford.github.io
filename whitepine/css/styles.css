@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'kionaregular';
+    src: url('fonts/kiona/kiona-regular-webfont.woff2') format('woff2'),
+         url('fonts/kiona/kiona-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kionaitalic';
+    src: url('fonts/kiona-italic/kiona-itallic-webfont.woff2') format('woff2'),
+         url('fonts/kiona-italic/kiona-itallic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Adobe Garamond Pro Bold
+font-family: adobe-garamond-pro, serif;
+font-weight: 700;
+font-style: normal;
+
+
+Adobe Garamond Pro Italic
+font-family: adobe-garamond-pro, serif;
+font-weight: 400;
+font-style: italic;
+
+
+Adobe Garamond Pro Regular
+font-family: adobe-garamond-pro, serif;
+font-weight: 400;
+font-style: normal;*/
+
+
+
+h1 {font-family: 'kionaregular', sans-serif; font-size: 28px;}
+
+h2 {font-family: 'kionaregular', sans-serif; font-size: 20px; }
+
+h3 {font-family: 'kionaregular', sans-serif; font-size: 16px;} 
+
+/* buttons */
+h4 {font-family: 'kionaregular', sans-serif; font-size: 14px;}
+
+h5 {font-family: 'adobe-garamond-pro', serif; font-weight: 700; font-style: normal; font-size: 13px;}
+
+h6 {font-family: 'adobe-garamond-pro', serif; font-style: normal; font-size: 13px;}
+
+a {text-decoration: none;}
+
+
+
+
+/*  PAGE STYLES  */
+
+h3 {margin-top: 30px; margin-bottom: 5px;}
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {width: 100%; border-top: 4px solid #738498; padding-top: 10px;}
+
+#section1 {height: 420px;}
+
+#section2 {height: 480px;}
+
+#section3 {height: 240px;}
+
+#section4 {height: 400px;}
+
+#section5 {height: 260px;}
+
+#section6 {height: 240px;}
+
+#section7 {height: 360px;}
+
+/*body {
+    background-color: #355662; opacity: 0.2;
+}*/
+
+
+
+/*  COLOR SCHEME STYLES   */
+
+#swatch {height: 160px; width: 140px; float: left; text-decoration: none; color: #202638; font-size: 12px; padding: 0;} 
+
+#greybeblue {background-color: #B6BDCB; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#stormscoming {background-color: #7E8595; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#duskdeepening {background-color: #666C77; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#babyishblue {background-color: #738498; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#godarker {background-color: #444647; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#definitelyforest {background-color: #5A645B; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#crazycalm {background-color: #727F74; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
+
+#section1-1 {float: left;}
+
+
+/*  FONT STYLES  */
+#section2 .font {margin: 30px 0 5px 0 ; border: none;}
+#section2 .comment {margin: 5px 0 0 2; border: none;}
+
+
+/*  LOGO STYLES  */
+#logo {width: 240px; float: left; padding: 10;}
+#fav {float: left; padding: 0 30px 10px 0;}
+#section3 h6 {float: left; width: 310px; margin: 0 10px 10px 0;}
+#section3-1 {float: left; width: 300px;}
+
+
+/*  BOX STYLES  */
+/*  margin-top for h1 will need to be lessened if there is more text in h6  */
+
+.mycard {
+/*    width: 512px; */
+    /*margin: 10px;*/ 
+    /*box-shadow: 2px 2px 15px grey;*/ 
+/*    float: left;*/
+    background-color: #738498;
+    height: auto; 
+    
+}
+
+.mycard h1 {color: white; padding: 0; margin: 105px 30px 30px 30px;}
+
+.mycard h6 {
+    margin: 0 30px; 
+    padding:  0; 
+    color: white;
+}
+
+/*  BUTTON STYLES  */
+#button {
+    height: 40px; 
+    box-shadow: none; 
+    float: left; 
+    margin: 30px 30px 40px 30px;
+    border: solid white 1px;
+} 
+
+#button h4 {margin: 0; padding: 12px 30px; color: white;}
+
+#button a:hover {display: block; color: white;}
+
+#button a:hover #button h4 {display: block; color: white;}
+
+#button:hover {background-color: white; opacity: .2; border: solid white 1px;}
+
+
+/* button styles */
+#button1 { 
+    box-shadow: none; 
+    float: left; 
+    margin: 10;
+    padding: 0;
+    color: black;
+    border: 2px solid #444647;
+    /*box-shadow: 0px 0px 10px grey;*/}
+
+#button1 h4 {margin: 0; padding: 12 30;}
+
+#button1:hover {background-color: #444647; color: white;}
+
+#background {background-color: #444647; float: left; margin: 10px;}
+
+
+
+
+
+/*  UNORDERED LIST STYLES  */
+
+ul {border-left: 6px solid #727F74; margin-left: 20px;}
+
+ul li {list-style: none; margin: 0 0 -5 -20;}
+
+h6 a, h4 a {font-weight: 700; color: #727F74;} 
+h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
+
+
+/*  BLOCKQUOTE STYLES  */
+
+#blockquote {width: 400px; background-color: #B6BDCB; padding: 10px; 
+    margin: 10px 27%; 
+    float: left;}
+
+#bq1 {color: white; font-size: 30px; margin: 60px 0 -5px 0;}
+#bq2 {color: white; font-size: 20px; margin: 0; text-align: right;}
+#blockquote h6 {color: white; text-align: right; margin: 0 20px 60px 5px;}
+
+
+/*  ICON STYLES  */
+#icon {margin: 10; width: 60px;} 
+
+
+
+
+
+
+
+/*   website!   */
+
+/*
+#header {float: left; position: relative;}
+#headerimg {width: 1280px;}
+*/
+
+/*#headerlogo {position: absolute; width: 400px; top: 300px; left: 430px;}*/
+
+
+/*#container {background-color: #DCE0E5; width: 1280px; height: 1828px;}*/
+
+#center {background-color: white; 
+/*    width: 1024px; height: 1828px; */
+    margin: 0 128px; box-shadow: 1px 1px 80px #989FA8;}
+
+#blockquote {background-color: white; }
+#bq1, #bq2, #blockquote h6 {color: black;}
+
+/*#homeimg1, #homeimg2 {width: 512px; margin: 0; padding: 0; float: left;} */
+
+/*.mycard {width: 512px;}*/
+.mycard2 {
+/*    width: 512px; */
+    height: auto; background-color: #727F74; text-align: right;}
+
+.mycard2 #button {float: right;}
+
+#footer {
+/*    width: 1280px; */
+    height: 260px; 
+    
+    background-color: #444647; float: left; }
+
+#footer img {width: 260px; float: left; margin: 50px 510px 0 510px;}
+
+#footer h4 {
+/*    width: 720px; */
+    float: left; color: white; margin: 20px 280px; text-align: center; font-size: 11px;}
+
+#footer a {text-decoration: none; font-size: 16px;}
+
+
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    background-color: transparent!important;
+    width: 100%;
+}
+
+
+.home-tabs .tab-content {
+    background-color: beige;
+    min-height: 100px;
+}
+
+/*
+
+Bootstrap Nav menu with multilevel dropdowns
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+*/
+
+
+
+
+/*
+
+#navigation ul {
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+    font-family: 'kionaregular', sans-serif; 
+    font-size: 16px;
+}
+
+#navigation #main {margin: 10px;}
+#navigation #sublevel {margin-left: -50px;}
+
+#navigation ul li {
+    margin: 0;
+    padding: 0;
+    color: white;
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-family: 'kionaregular', sans-serif; 
+    font-size: 14px;
+}
+
+#navigation ul li a {text-decoration: none; color: white; display: block;}
+
+#navigation ul li a:hover {text-decoration: underline;}
+
+ul li ul li {display: none;}
+
+ul li:hover ul li {display: block; margin-left: 0;}
+
+#sub-level-item li {display: none;}
+
+ul li:hover ul li:hover #sub-level-item li {display: block; }
+
+
+
+*/
