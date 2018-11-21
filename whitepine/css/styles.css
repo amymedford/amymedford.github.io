@@ -54,7 +54,7 @@ a {text-decoration: none;}
 
 /*  PAGE STYLES  */
 
-h3 {margin-top: 30px; margin-bottom: 5px;}
+/*h3 {margin-top: 30px; margin-bottom: 5px;}*/
 
 #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {width: 100%; border-top: 4px solid #738498; padding-top: 10px;}
 
@@ -114,57 +114,62 @@ h3 {margin-top: 30px; margin-bottom: 5px;}
 /*  BOX STYLES  */
 /*  margin-top for h1 will need to be lessened if there is more text in h6  */
 
-.mycard {
-/*    width: 512px; */
-    /*margin: 10px;*/ 
-    /*box-shadow: 2px 2px 15px grey;*/ 
-/*    float: left;*/
-    background-color: #738498;
-    height: auto; 
-    
-}
 
-.mycard h1 {color: white; padding: 0; margin: 105px 30px 30px 30px;}
-
-.mycard h6 {
-    margin: 0 30px; 
-    padding:  0; 
-    color: white;
-}
 
 /*  BUTTON STYLES  */
-#button {
+.button {
     height: 40px; 
     box-shadow: none; 
     float: left; 
     margin: 30px 30px 40px 30px;
     border: solid white 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
 } 
 
-#button h4 {margin: 0; padding: 12px 30px; color: white;}
+.button h4 {margin: 0; padding: 12px 30px; color: white;}
 
-#button a:hover {display: block; color: white;}
+.button a:hover {text-decoration: none;}
 
-#button a:hover #button h4 {display: block; color: white;}
+.button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px; }
 
-#button:hover {background-color: white; opacity: .2; border: solid white 1px;}
+
+
 
 
 /* button styles */
-#button1 { 
+.button1 { 
     box-shadow: none; 
     float: left; 
-    margin: 10;
-    padding: 0;
+    padding: 0px;
     color: black;
-    border: 2px solid #444647;
-    /*box-shadow: 0px 0px 10px grey;*/}
+    border: 1px solid #444647;
+    -webkit-transition-duration: 0.4s; /* Safari */
 
-#button1 h4 {margin: 0; padding: 12 30;}
+}
 
-#button1:hover {background-color: #444647; color: white;}
+.button1 h4, .button1 h4 a {margin: 0; padding: 8px 10px; color: black;}
 
-#background {background-color: #444647; float: left; margin: 10px;}
+.button1:hover {background-color: #444647; color: white; text-decoration: none;}
+
+.button1 h4:hover, .button1 a:hover {text-decoration: none; color: white; font-weight:400; }
+
+
+
+
+.tryHover {box-shadow: none; 
+    float: left; 
+    padding: 0px;
+    color: black;
+    border: 1px solid #444647;
+    -webkit-transition-duration: 0.4s; /* Safari */}
+
+.tryHover h4 {margin: 0; padding: 8px 28px; color: black;}
+
+.tryHover:hover {background-color: #444647; color: white; text-decoration: none;}
+
+.tryHover h4:hover {color: white;}
+
+/*#background {background-color: #444647; float: left; margin: 10px;}*/
 
 
 
@@ -176,7 +181,7 @@ ul {border-left: 6px solid #727F74; margin-left: 20px;}
 
 ul li {list-style: none; margin: 0 0 -5 -20;}
 
-h6 a, h4 a {font-weight: 700; color: #727F74;} 
+ul h6 a, ul h4 a {font-weight: 700; color: #727F74;} 
 h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 
@@ -202,158 +207,237 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 /*   website!   */
 
-/*
-#header {float: left; position: relative;}
-#headerimg {width: 1280px;}
-*/
+.col {padding: 0; margin: 0;}
 
-/*#headerlogo {position: absolute; width: 400px; top: 300px; left: 430px;}*/
+.row {padding: 0; margin: 0;}
 
+.wrapper {
+    background-color: #DCE0E5;
+}
 
-/*#container {background-color: #DCE0E5; width: 1280px; height: 1828px;}*/
+.container {
+    background-color: white;
+}
 
-#center {background-color: white; 
-/*    width: 1024px; height: 1828px; */
-    margin: 0 128px; box-shadow: 1px 1px 80px #989FA8;}
-
-#blockquote {background-color: white; }
-#bq1, #bq2, #blockquote h6 {color: black;}
-
-/*#homeimg1, #homeimg2 {width: 512px; margin: 0; padding: 0; float: left;} */
-
-/*.mycard {width: 512px;}*/
-.mycard2 {
-/*    width: 512px; */
-    height: auto; background-color: #727F74; text-align: right;}
-
-.mycard2 #button {float: right;}
-
-#footer {
-/*    width: 1280px; */
-    height: 260px; 
-    
-    background-color: #444647; float: left; }
-
-#footer img {width: 260px; float: left; margin: 50px 510px 0 510px;}
-
-#footer h4 {
-/*    width: 720px; */
-    float: left; color: white; margin: 20px 280px; text-align: center; font-size: 11px;}
-
-#footer a {text-decoration: none; font-size: 16px;}
+.myContainer {
+    box-shadow: 1px 1px 120px #989FA8;
+    padding: 0;
+}
 
 
+/* Navbar Styles */
 
-/* Navbar */
-.navbar {
+.myNavbar {
     position: absolute;
     background-color: transparent!important;
     width: 100%;
-}
-
-
-.home-tabs .tab-content {
-    background-color: beige;
-    min-height: 100px;
-}
-
-/*
-
-Bootstrap Nav menu with multilevel dropdowns
-
-
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
-}
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
-}
-
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-}
-*/
-
-
-
-
-/*
-
-#navigation ul {
-    padding: 0; 
-    margin: 0;
-    list-style: none;
     font-family: 'kionaregular', sans-serif; 
     font-size: 16px;
+    padding-top: 20px;
+}
+.navbar-light .navbar-nav .nav-link {color: black;}
+
+.navbar-light .navbar-nav .show>.nav-link {color: white;}
+
+.myNavbar a:hover {color: grey;}
+
+.dropdown-item.active, .dropdown-item:active {background-color: white;}
+
+.dropdown-menu {background-color: #B6BDCB;}
+
+.navbar h3 {
+    color: white;
 }
 
-#navigation #main {margin: 10px;}
-#navigation #sublevel {margin-left: -50px;}
-
-#navigation ul li {
+.navbar ul {
+    border: none;
     margin: 0;
     padding: 0;
-    color: white;
-    float: left;
-    width: 200px;
-    height: 40px;
-    background-color: black;
-    opacity: .8;
-    line-height: 40px;
-    text-align: center;
-    font-family: 'kionaregular', sans-serif; 
-    font-size: 14px;
 }
 
-#navigation ul li a {text-decoration: none; color: white; display: block;}
+.myNavbar .nav-link {margin-right: 30px;}
 
-#navigation ul li a:hover {text-decoration: underline;}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link {color: white;}
 
-ul li ul li {display: none;}
-
-ul li:hover ul li {display: block; margin-left: 0;}
-
-#sub-level-item li {display: none;}
-
-ul li:hover ul li:hover #sub-level-item li {display: block; }
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #B6BDCB;}
 
 
 
+
+/*  Header Image  */
+
+#headerimg {width: 100%;}
+
+
+/*  Tabs Styles  */
+
+.tabposition {
+    position: absolute; 
+    margin-top: -39px;
+}
+
+.activetab {
+    background-color: white;
+}
+
+.notactive {
+    background-color: white; 
+    opacity: .6;
+}
+
+.mytabs {
+    margin: 0 20px 0 0; 
+    padding: 10px 50px 0 50px; 
+    border-radius: 0!important;
+    text-decoration: none;
+}
+
+#myTab h3:hover {
+    color: #727F74;
+}
+
+#myTab h3 {
+    text-decoration: none;
+    color: black;
+}
+
+.home-tabs .tab-content {
+/*    height: 400px;*/
+}
+
+#myTabContent, #popular {min-height: 400px; padding: 0!important; margin: 0!important;}
+
+
+/*  Tab Cards  */
+
+.popularcard {
+/*    width: 30%;*/
+    float: left;
+    margin: 0!important;
+    padding: 0px;
+    border-radius: 0!important;
+}
+
+.popularcard h6 {margin-bottom: 20px;}
+
+.myCol {padding: 20px; border-bottom: 2px solid lightgrey;}
+
+.card-img-top {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+.card-group {
+    display: flex;
+    padding: 15px;
+}
+
+
+/*  Blockquote Styles  */
+
+#blockquote {background-color: white; }
+
+#bq1, #bq2, #blockquote h6 {color: black;}
+
+
+
+
+/*  Cards Styles  */
+
+.mycard {
+    background-color: #738498;
+    height: auto;
+    padding: 100px 0 100px 0; 
+}
+
+.mycard h1 {color: white; padding: 0; 
+    margin: 0px 30px 30px 30px;
+}
+
+.mycard h6 {
+    margin: 0 30px; 
+    padding:  0; 
+    color: white;
+}
+
+.mycardimage {width: 100%;}
+
+.mycard2 {
+    height: auto; 
+    background-color: #727F74; 
+    text-align: right;
+/*    order sets position in row... change for responsiveness? */
+/*    order: 0;*/
+}
+
+/*  doesn't work for order change... */
+
+/*
+.flexbox1 {
+    display: flex;
+}
 */
+
+/*
+@media only screen and (max-width: 400px) {
+    .mycard2 {order: 2;}
+}
+*/
+.mycard .button {margin-bottom: 0;}
+.mycard2 .button {float: right; margin-bottom: 0;}
+
+
+
+
+/*Map card*/
+
+#mapimg {
+    float: left; 
+    width: 60%; padding-right: 20px;
+}
+
+#mapinfo {
+    float: left; 
+    padding: 20px 20px 20px 0;
+    max-width: 40%;
+}
+
+#mapinfo h6 {
+    padding: 10px 0 20px 0;
+}
+
+#mapinfo .button1 {
+    width: 180px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*  footer styles  */
+
+footer {
+    height: 260px; 
+    width: 100%;
+    padding: 0!important;
+    margin: 0!important;
+    background-color: #444647;
+    float: left;
+}
+
+#footer {
+    width: 600px;
+    height: 260px;
+    align-content: center;
+    margin: 0 26.3%;
+    padding: 0;
+}
+
+#footer img {width: 260px; margin: 50px 28% 0 28%; align-content: center;}
+
+#footer h4 {
+    float: left; color: white; margin-top: 20px; text-align: center; font-size: 11px; position: center;}
+
+#footer a {text-decoration: none; font-size: 16px; color: white; position: center;}
