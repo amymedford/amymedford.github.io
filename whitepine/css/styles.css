@@ -154,21 +154,6 @@ a {text-decoration: none;}
 .button1 h4:hover, .button1 a:hover {text-decoration: none; color: white; font-weight:400; }
 
 
-
-
-.tryHover {box-shadow: none; 
-    float: left; 
-    padding: 0px;
-    color: black;
-    border: 1px solid #444647;
-    -webkit-transition-duration: 0.4s; /* Safari */}
-
-.tryHover h4 {margin: 0; padding: 8px 28px; color: black;}
-
-.tryHover:hover {background-color: #444647; color: white; text-decoration: none;}
-
-.tryHover h4:hover {color: white;}
-
 /*#background {background-color: #444647; float: left; margin: 10px;}*/
 
 
@@ -182,18 +167,19 @@ ul {border-left: 6px solid #727F74; margin-left: 20px;}
 ul li {list-style: none; margin: 0 0 -5 -20;}
 
 ul h6 a, ul h4 a {font-weight: 700; color: #727F74;} 
-h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
+h6 a {font-weight: 700; color: #727F74;}
+h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;}
 
 
 /*  BLOCKQUOTE STYLES  */
 
-#blockquote {width: 400px; background-color: #B6BDCB; padding: 10px; 
-    margin: 10px 27%; 
+#blockquote {width: 50%; background-color: #B6BDCB; padding: 10px; 
+    margin: 40px 0; align-content: center; 
     float: left;}
 
-#bq1 {color: white; font-size: 30px; margin: 60px 0 -5px 0;}
-#bq2 {color: white; font-size: 20px; margin: 0; text-align: right;}
-#blockquote h6 {color: white; text-align: right; margin: 0 20px 60px 5px;}
+#bq1 {color: white; font-size: 34px; margin: 0; text-align: center;}
+#bq2 {color: white; font-size: 20px; margin: 0; text-align: center;}
+#blockquote h6 {color: white; text-align: center; margin: 10px;}
 
 
 /*  ICON STYLES  */
@@ -226,28 +212,30 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 
 /* Navbar Styles */
-
 .myNavbar {
     position: absolute;
-    background-color: transparent!important;
+/*    background-color: transparent!important;*/
+    background-color: white;
     width: 100%;
     font-family: 'kionaregular', sans-serif; 
     font-size: 16px;
-    padding-top: 20px;
+    box-shadow: 0px 0px 15px grey;
+    padding: 0;
 }
+
+.myNavbar .container {padding: 0; margin: 0;}
+
+.myNavbar .search {align-content: right; margin-right: 10px; font-size: 12px; padding: 4px;}
+
 .navbar-light .navbar-nav .nav-link {color: black;}
 
-.navbar-light .navbar-nav .show>.nav-link {color: white;}
+.navbar-light .navbar-nav .show>.nav-link {color: black;}
 
-.myNavbar a:hover {color: grey;}
+.myNavbar a:hover {color: darkgrey;}
 
 .dropdown-item.active, .dropdown-item:active {background-color: white;}
 
-.dropdown-menu {background-color: #B6BDCB;}
-
-.navbar h3 {
-    color: white;
-}
+.dropdown-menu {background-color: white;}
 
 .navbar ul {
     border: none;
@@ -257,9 +245,9 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 .myNavbar .nav-link {margin-right: 30px;}
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link {color: white;}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link {color: black;}
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #B6BDCB;}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: darkgrey;}
 
 
 
@@ -273,7 +261,7 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 .tabposition {
     position: absolute; 
-    margin-top: -39px;
+    margin-top: -37px;
 }
 
 .activetab {
@@ -288,24 +276,29 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 .mytabs {
     margin: 0 20px 0 0; 
     padding: 10px 50px 0 50px; 
-    border-radius: 0!important;
+    border-radius: 2px;
     text-decoration: none;
 }
 
-#myTab h3:hover {
+#myTablist h3:hover {
     color: #727F74;
 }
 
-#myTab h3 {
+#myTablist h3 {
     text-decoration: none;
     color: black;
 }
 
-.home-tabs .tab-content {
-/*    height: 400px;*/
-}
 
-#myTabContent, #popular {min-height: 400px; padding: 0!important; margin: 0!important;}
+#myTabContent, #popular {min-height: 200px; padding: 0!important; margin: 0!important;}
+
+
+
+
+
+
+
+
 
 
 /*  Tab Cards  */
@@ -320,7 +313,9 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 .popularcard h6 {margin-bottom: 20px;}
 
-.myCol {padding: 20px; border-bottom: 2px solid lightgrey;}
+.myCol {
+    padding: 20px; 
+    border-bottom: 2px solid lightgrey;}
 
 .card-img-top {
     border-top-left-radius: 0!important;
@@ -333,12 +328,53 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 }
 
 
+
+/*Map card*/
+
+#mapimg {width: 100%; padding: 10px 0 20px 0;}
+#mapinfo {width: 100%;}
+#mapinfo h6 {padding: 10px 0 20px 0;}
+#mapinfo .button1 {width: 180px; text-align: center;}
+
+
+/* Weather Update Card */
+
+#coloraboveimg {width: 100%; background-color: #727F74;}
+
+.weatherupdates img {width: 100%; margin-top: -10px;}
+.weatherupdates .col-md-5 {padding: 10px 30px 0 10px;}
+.weatherupdates .col-md-5 h2 {
+    color: white; 
+    padding: 18px;
+}
+.weatherupdates h6 {margin: 15px 0;}
+.weatherupdates .button1 {margin-bottom: 10px;}
+.weatherupdates .col-md-7 {border-left: 2px solid #5A645B; padding: 10px 30px 0 30px;}
+.weatherupdates .col-md-7 h6 {margin: 0 0 30px 0;}
+
+
+
+.faqtab #faqcolorbox {background-color: #738498; padding: 25px 25px 60px 25px; margin: 10px 0 20px 0;}
+.faqtab #faqcolorbox img {width: 100%;}
+.faqtab #faqcolorbox h2 {color: white; margin-bottom: 15px;}
+.faqtab #faqcolorbox h6 {color: white; margin: 15px 0;}
+.faqtab .weatherevent h6 {margin: 0 0 30px 0;}
+.faqtab .faqtext {padding: 10px 20px 0 10px;}
+
+
+.faqtab .button {margin: 0;}
+.faqtab a {color: white;}
+.faqtab .button h4 {text-decoration: none; margin: 0; padding: 12px 30px; color: white;}
+.button a:hover {text-decoration: none; font-weight: 400; color: white;}
+.button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px;}
+.faqtab h6 a {color: #A5ACBA; text-decoration: none;}
+.faqtab h6 a:hover {color: #738498;}
+
+
 /*  Blockquote Styles  */
 
 #blockquote {background-color: white; }
-
 #bq1, #bq2, #blockquote h6 {color: black;}
-
 
 
 
@@ -389,28 +425,6 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 
 
 
-/*Map card*/
-
-#mapimg {
-    float: left; 
-    width: 60%; padding-right: 20px;
-}
-
-#mapinfo {
-    float: left; 
-    padding: 20px 20px 20px 0;
-    max-width: 40%;
-}
-
-#mapinfo h6 {
-    padding: 10px 0 20px 0;
-}
-
-#mapinfo .button1 {
-    width: 180px;
-    text-align: center;
-}
-
 
 
 
@@ -419,25 +433,67 @@ h6 a:hover, h4 a:hover {font-weight: 700; color: #B6BDCB;}
 /*  footer styles  */
 
 footer {
-    height: 260px; 
     width: 100%;
-    padding: 0!important;
     margin: 0!important;
     background-color: #444647;
-    float: left;
+    padding-top: 20px;
 }
 
-#footer {
-    width: 600px;
-    height: 260px;
-    align-content: center;
-    margin: 0 26.3%;
-    padding: 0;
+footer .col-md-3 {}
+footer .col-md-4 {background-color: #3B3D3E; padding: 25px; }
+footer .col-md-5 {padding-top: 20px;}
+
+footer .container {margin: 0; padding: 0; width: 100%;}
+
+footer img {width: 100%; max-width: 200px; margin: 20px 20px 20px 0;}
+
+footer h2 {color: white; font-size: 16px; margin-bottom: 20px;}
+footer h3 {color: white; margin-top: 20px; font-size: 14px; }
+footer h4 {color: white;}
+footer a {text-decoration: none; font-size: 16px; color: white;}
+footer a:hover {color: #727F74; text-decoration: none;}
+
+
+
+footer .black {padding: 0; margin: 20px 0 0 0; background-color: #303233;}
+footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
+
+
+
+
+
+
+
+
+
+
+
+/*   responsive media queries:  */
+
+@media screen and (max-width: 1200px) and (min-width: 0) {
+    
 }
 
-#footer img {width: 260px; margin: 50px 28% 0 28%; align-content: center;}
+@media screen and (max-width: 1024px) and (min-width: 0) {
+    .myContainer {margin: 0!important;}
+    .container {max-width: 100%;}
+    .mytabs {margin: 0 15px 0 0; padding: 10px 20px;}
+    .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
+    .faqtab #faqcolorbox {}
+    .faqtab .faqtext {padding: 20px;}
+    
 
-#footer h4 {
-    float: left; color: white; margin-top: 20px; text-align: center; font-size: 11px; position: center;}
+}
 
-#footer a {text-decoration: none; font-size: 16px; color: white; position: center;}
+@media screen and (max-width: 768px) and (min-width: 0) {
+    .mytabs {margin: 0 10px 0 0; padding: 10px;}
+    .mycard2 {order: 2; text-align: left;}
+    .mycard2 .button {float: left;}
+    .myNavbar .search {display: none;}
+}
+
+@media screen and (max-width: 320px) and (min-width: 0) {
+    
+}
+
+
