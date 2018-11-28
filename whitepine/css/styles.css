@@ -192,6 +192,7 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 
 
 /*   website!   */
+body, html {height: 100%;}
 
 .col {padding: 0; margin: 0;}
 
@@ -213,19 +214,18 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 
 /* Navbar Styles */
 .myNavbar {
-    position: absolute;
+/*    position: absolute;*/
 /*    background-color: transparent!important;*/
     background-color: white;
     width: 100%;
     font-family: 'kionaregular', sans-serif; 
     font-size: 16px;
-    box-shadow: 0px 0px 15px grey;
-    padding: 0;
+    box-shadow: 0px 5px 40px grey;
 }
 
 .myNavbar .container {padding: 0; margin: 0;}
 
-.myNavbar .search {align-content: right; margin-right: 10px; font-size: 12px; padding: 4px;}
+.myNavbar .search {align-content: right; font-size: 14px; padding: 6px;}
 
 .navbar-light .navbar-nav .nav-link {color: black;}
 
@@ -260,7 +260,7 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 /*  Tabs Styles  */
 
 .tabposition {
-    position: absolute; 
+/*    position: absolute; */
     margin-top: -37px;
 }
 
@@ -343,14 +343,14 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 
 .weatherupdates img {width: 100%; margin-top: -10px;}
 .weatherupdates .col-md-5 {padding: 10px 30px 0 10px;}
-.weatherupdates .col-md-5 h2 {
-    color: white; 
-    padding: 18px;
-}
+.weatherupdates .col-md-5 h2 {color: white; padding: 18px;}
 .weatherupdates h6 {margin: 15px 0;}
 .weatherupdates .button1 {margin-bottom: 10px;}
 .weatherupdates .col-md-7 {border-left: 2px solid #5A645B; padding: 10px 30px 0 30px;}
 .weatherupdates .col-md-7 h6 {margin: 0 0 30px 0;}
+.weatherupdates .col-md-7 h2 {margin-top: 10px;}
+.weatherupdates .table {margin: 20px 0 20px 0; font-family: 'kionaregular', sans-serif; font-size: 16px;}
+.weatherupdates .table .day {font-family: 'adobe-garamond-pro', serif; font-weight: 700; font-style: normal; font-size: 13px;}
 
 
 
@@ -358,13 +358,16 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 .faqtab #faqcolorbox img {width: 100%;}
 .faqtab #faqcolorbox h2 {color: white; margin-bottom: 15px;}
 .faqtab #faqcolorbox h6 {color: white; margin: 15px 0;}
+.faqtab #faqcolorbox h6 a {color: #C5CCD6;}
+.faqtab #faqcolorbox h6 a:hover {color: #A5ACBA;}
 .faqtab .weatherevent h6 {margin: 0 0 30px 0;}
 .faqtab .faqtext {padding: 10px 20px 0 10px;}
 
 
 .faqtab .button {margin: 0;}
-.faqtab a {color: white;}
 .faqtab .button h4 {text-decoration: none; margin: 0; padding: 12px 30px; color: white;}
+
+.faqtab a {color: white;}
 .button a:hover {text-decoration: none; font-weight: 400; color: white;}
 .button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px;}
 .faqtab h6 a {color: #A5ACBA; text-decoration: none;}
@@ -402,25 +405,32 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
     height: auto; 
     background-color: #727F74; 
     text-align: right;
-/*    order sets position in row... change for responsiveness? */
-/*    order: 0;*/
 }
 
-/*  doesn't work for order change... */
 
-/*
-.flexbox1 {
-    display: flex;
-}
-*/
-
-/*
-@media only screen and (max-width: 400px) {
-    .mycard2 {order: 2;}
-}
-*/
 .mycard .button {margin-bottom: 0;}
 .mycard2 .button {float: right; margin-bottom: 0;}
+
+
+
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("images/headerimg.png");
+
+    /* Set a specific height */
+    min-height: 100%;} 
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    position: relative;
+/*    background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 
@@ -478,10 +488,9 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .myContainer {margin: 0!important;}
     .container {max-width: 100%;}
     .mytabs {margin: 0 15px 0 0; padding: 10px 20px;}
-    .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
     .faqtab #faqcolorbox {}
     .faqtab .faqtext {padding: 20px;}
-    
+    .myNavbar .search {display: none;}
 
 }
 
@@ -489,7 +498,8 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .mytabs {margin: 0 10px 0 0; padding: 10px;}
     .mycard2 {order: 2; text-align: left;}
     .mycard2 .button {float: left;}
-    .myNavbar .search {display: none;}
+    .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
+
 }
 
 @media screen and (max-width: 320px) and (min-width: 0) {
