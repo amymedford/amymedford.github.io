@@ -264,16 +264,12 @@ body, html {height: 100%;}
 
 .myNavbar a img {width: 120px;}
 .nav-tabs {border-bottom: none;}
-.navbar-toggler {color: white!important;}
+
 
 
 /*  Header Image  */
 
-#header {
-    position: relative;
-    z-index: 10;
-}
-
+#header {position: relative; z-index: 10;}
 #headerimg {width: 100%;}
 
 
@@ -478,6 +474,23 @@ body, html {height: 100%;}
 .NLloadbutton {margin: 0 20px 20px 20px;}
 .NLloadbutton a {text-decoration: none; color: #727F74;}
 .NLloadbutton a:hover {text-decoration: none; color: #444647;}
+
+
+
+
+/* Gallery Page */
+.Gcol {background-color: #738498; height: 240px; padding: 20px;}
+.Gcol h1 {color: white; margin: 165px 0 0 10px;}
+.Gphotomap .search {float: right; width: 236px; font-family: 'kionaregular', sans-serif; font-size: 14px; padding: 6px; margin-bottom: 10px; }
+.Gphotomap {padding: 20px;}
+.Gphotomap img {width: 100%;}
+.Gphotomap .button1 {float: right; margin-top: 10px;}
+.Ggallery {padding: 20px;}
+.Ggallery img {width: 100%;}
+.Ggallery .card-body {padding: 10px;}
+.Ggallery .button1 {float: right; margin-top: 10px;}
+
+
 
 /*  footer styles  */
 
