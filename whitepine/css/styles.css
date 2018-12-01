@@ -264,7 +264,7 @@ body, html {height: 100%;}
 
 .myNavbar a img {width: 120px;}
 .nav-tabs {border-bottom: none;}
-
+.navbar-toggler {color: white!important;}
 
 
 /*  Header Image  */
@@ -494,7 +494,7 @@ footer .col-md-5 {padding-top: 20px;}
 
 footer .container {margin: 0; padding: 0; width: 100%;}
 
-footer img {width: 100%; max-width: 200px; margin: 20px 20px 20px 0;}
+footer a img {width: 100%; max-width: 200px; margin: 20px 20px 20px 0;}
 
 footer h2 {color: white; font-size: 16px; margin-bottom: 20px;}
 footer h3 {color: white; margin-top: 20px; font-size: 14px; }
