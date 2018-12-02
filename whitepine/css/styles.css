@@ -15,87 +15,40 @@
 
 }
 
-/*Adobe Garamond Pro Bold
-font-family: adobe-garamond-pro, serif;
-font-weight: 700;
-font-style: normal;
-
-
-Adobe Garamond Pro Italic
-font-family: adobe-garamond-pro, serif;
-font-weight: 400;
-font-style: italic;
-
-
-Adobe Garamond Pro Regular
-font-family: adobe-garamond-pro, serif;
-font-weight: 400;
-font-style: normal;*/
-
-
 
 h1 {font-family: 'kionaregular', sans-serif; font-size: 28px;}
-
 h2 {font-family: 'kionaregular', sans-serif; font-size: 20px; }
-
 h3 {font-family: 'kionaregular', sans-serif; font-size: 16px;} 
-
 /* buttons */
 h4 {font-family: 'kionaregular', sans-serif; font-size: 14px;}
-
 h5 {font-family: 'adobe-garamond-pro', serif; font-weight: 700; font-style: normal; font-size: 13px;}
-
 h6 {font-family: 'adobe-garamond-pro', serif; font-style: normal; font-size: 13px;}
-
 a {text-decoration: none;}
 
 
-
-
-/*  PAGE STYLES  */
-
-/*h3 {margin-top: 30px; margin-bottom: 5px;}*/
+/*  Style Guide PAGE STYLES  */
 
 #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {width: 100%; border-top: 4px solid #738498; padding-top: 10px;}
-
 #section1 {height: 420px;}
-
 #section2 {height: 480px;}
-
 #section3 {height: 240px;}
-
 #section4 {height: 400px;}
-
 #section5 {height: 260px;}
-
 #section6 {height: 240px;}
-
 #section7 {height: 360px;}
-
-/*body {
-    background-color: #355662; opacity: 0.2;
-}*/
 
 
 
 /*  COLOR SCHEME STYLES   */
 
 #swatch {height: 160px; width: 140px; float: left; text-decoration: none; color: #202638; font-size: 12px; padding: 0;} 
-
 #greybeblue {background-color: #B6BDCB; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #stormscoming {background-color: #7E8595; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #duskdeepening {background-color: #666C77; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #babyishblue {background-color: #738498; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #godarker {background-color: #444647; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #definitelyforest {background-color: #5A645B; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #crazycalm {background-color: #727F74; width: 140px; height: 50px; float: left; margin-bottom: 5px;}
-
 #section1-1 {float: left;}
 
 
@@ -111,14 +64,8 @@ a {text-decoration: none;}
 #section3-1 {float: left; width: 300px;}
 
 
-/*  BOX STYLES  */
-/*  margin-top for h1 will need to be lessened if there is more text in h6  */
-
-
-
-/*  BUTTON STYLES  */
+/* button (on colored background) styles */
 .button {
-    height: 40px; 
     box-shadow: none; 
     float: left; 
     margin: 30px 30px 40px 30px;
@@ -126,37 +73,23 @@ a {text-decoration: none;}
     -webkit-transition-duration: 0.4s; /* Safari */
 } 
 
-.button h4 {margin: 0; padding: 12px 30px; color: white;}
-
-.button a:hover {text-decoration: none;}
-
-.button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px; }
+.button h4 {margin: 0; padding: 8px 14px; color: white;}
+.button a:hover {text-decoration: none; font-weight: 400; color: white;}
+.button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px;}
 
 
-
-
-
-/* button styles */
+/* button (on white background) styles */
 .button1 { 
     box-shadow: none; 
     float: left; 
-    padding: 0px;
     color: black;
     border: 1px solid #444647;
     -webkit-transition-duration: 0.4s; /* Safari */
-
 }
 
-.button1 h4, .button1 h4 a {margin: 0; padding: 8px 10px; color: black;}
-
+.button1 h4, .button1 h4 a {margin: 0; padding: 8px 14px; color: black;}
 .button1:hover {background-color: #444647; color: white; text-decoration: none;}
-
 .button1 h4:hover, .button1 a:hover {text-decoration: none; color: white; font-weight:400; }
-
-
-/*#background {background-color: #444647; float: left; margin: 10px;}*/
-
-
 
 
 
@@ -190,7 +123,6 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 
 
 
-
 /*   website!   */
 body, html {height: 100%;}
 
@@ -198,29 +130,20 @@ body, html {height: 100%;}
 
 .row {padding: 0; margin: 0;}
 
-.wrapper {
-    background-color: #DCE0E5;
-}
+.wrapper {background-color: #DCE0E5;}
 
-.container {
-    background-color: white;
-}
+.container {background-color: white;}
 
-.myContainer {
-    box-shadow: 1px 1px 120px #989FA8;
-    padding: 0;
-}
+.myContainer {box-shadow: 1px 1px 120px #989FA8; padding: 0;}
 
 
 /* Navbar Styles */
 .myNavbar {
     position: fixed;
     background-color: transparent!important;
-/*    background-color: white;*/
     width: 100%;
     font-family: 'kionaregular', sans-serif; 
     font-size: 16px;
-    
     -webkit-transition-duration: 0.8s; /* Safari */
     transition-duration: 0.8s;
 }
@@ -229,7 +152,6 @@ body, html {height: 100%;}
     background-color: #3B3D3E!important;
     box-shadow: 0px 0px 20px black;
 }
-
 
 .myNavbar.otherNav {
     background-color: #3B3D3E!important;
@@ -252,7 +174,8 @@ body, html {height: 100%;}
 
 .dropdown-item.active, .dropdown-item:active {background-color: white;}
 
-.dropdown-menu {background-color: white;}
+.dropdown-menu {background-color: white; box-shadow: 0px 0px 50px -10px black;
+}
 
 .navbar ul {
     border: none;
@@ -264,6 +187,17 @@ body, html {height: 100%;}
 
 .myNavbar a img {width: 120px;}
 .nav-tabs {border-bottom: none;}
+
+
+/* Navbar Toggler */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/toggle1.png");
+    margin: 5px;
+}
+.navbar-light .navbar-toggler {
+    color: none;
+    border-color: none;
+}
 
 
 
@@ -380,13 +314,10 @@ body, html {height: 100%;}
 .faqtab .weatherevent h6 {margin: 0 0 30px 0;}
 .faqtab .faqtext {padding: 10px 20px 0 10px;}
 
-
 .faqtab .button {margin: 0;}
-.faqtab .button h4 {text-decoration: none; margin: 0; padding: 12px 30px; color: white;}
+.faqtab .button h4 {text-decoration: none; color: white;}
 
 .faqtab a {color: white;}
-.button a:hover {text-decoration: none; font-weight: 400; color: white;}
-.button:hover {background: rgba(255, 255, 255, 0.2); border: solid white 1px;}
 .faqtab h6 a {color: #A5ACBA; text-decoration: none;}
 .faqtab h6 a:hover {color: #738498;}
 
@@ -400,42 +331,21 @@ body, html {height: 100%;}
 
 /*  Cards Styles  */
 
-.mycard {
-    background-color: #738498;
-    height: auto;
-    padding: 100px 0 100px 0; 
-}
-
-.mycard h1 {color: white; padding: 0; 
-    margin: 0px 30px 30px 30px;
-}
-
-.mycard h6 {
-    margin: 0 30px; 
-    padding:  0; 
-    color: white;
-}
-
-.mycardimage {width: 100%;}
-
-.mycard2 {
-    height: auto; 
-    background-color: #727F74; 
-    text-align: right;
-}
-
-
+.mycard {background-color: #738498; height: 360px; padding: 100px 0 100px 0;}
+.mycard h1 {color: white; padding: 0; margin: 0px 30px 30px 30px;}
+.mycard h6 {margin: 0 30px; padding:  0; color: white;}
+.mycardimage {width: 100%; height: 100%; background-size: cover;}
+.mycard2 {height: 360px; background-color: #727F74; text-align: right;}
 .mycard .button {margin-bottom: 0;}
 .mycard2 .button {float: right; margin-bottom: 0;}
 
 
 
-
+/* Background Image - Content Scrolls Over */
 
 .parallax { 
     /* The image used */
     background-image: url("../images/headerimg.png");
-
     /* Set a specific height */
     min-height: 780px;} 
 
@@ -454,18 +364,28 @@ body, html {height: 100%;}
 
 
 /* Newsletter Page */
+
 .NLcol {background-color: #727F74; height: 240px; padding: 20px;}
 .NLcol h1 {color: white; margin: 165px 0 0 10px;}
 
-.NLpreview img {width: 100%; padding: 20px 0 20px 0px;}
-.NLpreview .col-md-5 {padding: 20px 20px 20px 20px;}
-.NLpreview .col-md-5 h4 {padding-bottom: 20px;}
-.NLpreview .col-md-5 a {text-decoration: none; color: #727F74;}
-.NLpreview .col-md-5 a:hover {text-decoration: none; color: #444647;}
+.NLpreview {padding: 20px 20px 20px 20px;}
+.NLpreview img {width: 60%; padding: 0px 20px 10px 0px;}
+.NLpreview .NLright h4 {padding-bottom: 20px;}
+.NLpreview h6 {font-size: 14px;}
+.NLpreview a {text-decoration: none; color: #727F74;}
+.NLpreview a:hover {text-decoration: none; color: #444647;}
 
-.NLposts h2 {padding-left: 20px;}
+.NLsignup {background-color: #5A645B; margin: 20px 0; padding: 30px 20px; color: white;}
+.NLsignup .col-md-6 {float: left;}
+.NLsignup .search {float: left; width: 100%; font-family: 'kionaregular', sans-serif; font-size: 14px; padding: 6px;}
+.NLsignup .submit {float: left; margin: 10px 0 0 15px; padding: 2px; }
+.NLsignup a {color: white; text-decoration: none;}
+.NLsignup h6 {padding: 10px 0;}
+
+.NLposts .NLheader h2 {padding: 20px 0 0 20px;}
 .NLposts .card-deck {padding: 20px;}
 
+.NLcard {min-width: 220px;}
 .NLcard h2 {padding-left: 0;}
 .NLcard h6 {padding-bottom: 10px;}
 
@@ -475,20 +395,68 @@ body, html {height: 100%;}
 .NLloadbutton a {text-decoration: none; color: #727F74;}
 .NLloadbutton a:hover {text-decoration: none; color: #444647;}
 
+.NLleft {float: left; padding: 0;}
+.NLright {padding: 0;}
 
+#more {display: none;}
+#myBtn {
+    font-family: 'kionaregular', sans-serif; 
+    font-size: 14px;
+    padding: 8px 14px;
+    margin: 10px 0 0 0;
+    box-shadow: none; 
+    float: left; 
+    color: black;
+    border: 1px solid #444647;
+    -webkit-transition-duration: 0.4s;}
+
+#myBtn h4 {margin: 0; padding: 8px 14px; color: black;}
+#myBtn:hover {background-color: #444647; color: white; text-decoration: none;}
+#myBtn h4:hover, #myBtn a:hover {text-decoration: none; color: white; font-weight:400;}
+
+
+
+ 
 
 
 /* Gallery Page */
+
 .Gcol {background-color: #738498; height: 240px; padding: 20px;}
 .Gcol h1 {color: white; margin: 165px 0 0 10px;}
-.Gphotomap .search {float: right; width: 236px; font-family: 'kionaregular', sans-serif; font-size: 14px; padding: 6px; margin-bottom: 10px; }
+
 .Gphotomap {padding: 20px;}
+.Gphotomap .search {float: right; width: 236px; font-family: 'kionaregular', sans-serif; font-size: 14px; padding: 6px; margin-bottom: 10px; }
 .Gphotomap img {width: 100%;}
-.Gphotomap .button1 {float: right; margin-top: 10px;}
+.Gphotomap .button1 {margin-top: 10px;}
+
 .Ggallery {padding: 20px;}
 .Ggallery img {width: 100%;}
 .Ggallery .card-body {padding: 10px;}
-.Ggallery .button1 {float: right; margin-top: 10px;}
+.Ggallery a h4 {text-decoration: none; color: black;}
+.Ggallery a:hover {text-decoration: none;}
+.Ggallery .card h4:hover {color: #738498;}
+
+
+
+
+
+/* Contact Page */
+.Ccol {background-color: #606672; height: 240px; padding: 20px;}
+.Ccol h1 {color: white; margin: 165px 0 0 10px;}
+.Cinfo {border-right: 3px solid #606672; padding: 20px 20px 20px 30px; text-align: right;  margin: 20px 0;}
+.Cinfo h3 {padding-top: 12px;}
+.Cform {padding: 30px 40px 30px 20px; font-family: 'kionaregular', sans-serif; font-size: 14px;}
+.Cform input[type=text], select, textarea {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 6px; 
+    resize: vertical
+}
+.Cimage img {width: 100%; height: 100%;}
+.Cicons img {width: 40px; height: auto; padding: 5px;}
 
 
 
@@ -502,20 +470,20 @@ footer {
 }
 
 footer .col-md-3 {}
-footer .col-md-4 {background-color: #3B3D3E; padding: 25px; }
-footer .col-md-5 {padding-top: 20px;}
+footer .col-md-5 {background-color: #3B3D3E; padding: 25px; }
+footer .col-md-4 {padding-top: 25px; border-left: 3px solid #606672;}
 
 footer .container {margin: 0; padding: 0; width: 100%;}
 
-footer a img {width: 100%; max-width: 200px; margin: 20px 20px 20px 0;}
+footer .Logoimg a img {width: 100%; max-width: 200px; margin: 20px 20px 20px 0;}
 
 footer h2 {color: white; font-size: 16px; margin-bottom: 20px;}
-footer h3 {color: white; margin-top: 20px; font-size: 14px; }
 footer h4 {color: white;}
 footer a {text-decoration: none; font-size: 16px; color: white;}
 footer a:hover {color: #727F74; text-decoration: none;}
 footer .black a {font-size: 10px;}
 
+footer .col-md-5 img {width: 20px; height: auto; margin: 6px 15px 6px 6px;}
 
 
 footer .black {padding: 0; margin: 20px 0 0 0; background-color: #303233;}
@@ -526,20 +494,15 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
 
 
 
-
-
-
-
-
 /*   responsive media queries:  */
 
 @media screen and (max-width: 1200px) and (min-width: 0) {
-    
+     .myContainer {margin: 0!important;}
+    .container {max-width: 100%;}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 0) {
-    .myContainer {margin: 0!important;}
-    .container {max-width: 100%;}
+   
     .mytabs {margin: 0 15px 0 0; padding: 10px 20px;}
     .faqtab #faqcolorbox {}
     .faqtab .faqtext {padding: 20px;}
@@ -549,10 +512,14 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
 
 @media screen and (max-width: 768px) and (min-width: 0) {
     .mytabs {margin: 0 10px 0 0; padding: 10px;}
-    .mycard2 {order: 2; text-align: left;}
-    .mycard2 .button {float: left;}
     .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
+    .Cinfo {float: left; text-align: left; border-right: none;}
 
+}
+
+@media screen and (max-width: 575px) and (min-width: 0) {
+     .mycard2 {order: 2; text-align: left;}
+     .mycard2 .button {float: left;}
 }
 
 @media screen and (max-width: 320px) and (min-width: 0) {
