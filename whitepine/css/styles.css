@@ -368,9 +368,9 @@ body, html {height: 100%;}
 .NLcol {background-color: #727F74; height: 240px; padding: 20px;}
 .NLcol h1 {color: white; margin: 165px 0 0 10px;}
 
-.NLpreview {padding: 20px 20px 20px 20px;}
-.NLpreview img {width: 60%; padding: 0px 20px 10px 0px;}
-.NLpreview .NLright h4 {padding-bottom: 20px;}
+.NLpreview {padding: 30px 20px 20px 20px;}
+.NLpreview img {width: 60%;}
+.NLpreview .col-md-12 h4 {margin-bottom: 20px;}
 .NLpreview h6 {font-size: 14px;}
 .NLpreview a {text-decoration: none; color: #727F74;}
 .NLpreview a:hover {text-decoration: none; color: #444647;}
@@ -395,10 +395,11 @@ body, html {height: 100%;}
 .NLloadbutton a {text-decoration: none; color: #727F74;}
 .NLloadbutton a:hover {text-decoration: none; color: #444647;}
 
-.NLleft {float: left; padding: 0;}
+.NLleft {float: left; padding: 0px 20px 20px 0;}
 .NLright {padding: 0;}
 
 #more {display: none;}
+#more img {float: right; margin: 20px 0 20px 20px;}
 #myBtn {
     font-family: 'kionaregular', sans-serif; 
     font-size: 14px;
@@ -410,7 +411,7 @@ body, html {height: 100%;}
     border: 1px solid #444647;
     -webkit-transition-duration: 0.4s;}
 
-#myBtn h4 {margin: 0; padding: 8px 14px; color: black;}
+#myBtn h4 {margin: 0; color: black; padding: 0;}
 #myBtn:hover {background-color: #444647; color: white; text-decoration: none;}
 #myBtn h4:hover, #myBtn a:hover {text-decoration: none; color: white; font-weight:400;}
 
@@ -514,6 +515,9 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .mytabs {margin: 0 10px 0 0; padding: 10px;}
     .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
     .Cinfo {float: left; text-align: left; border-right: none;}
+    .Cform {padding-top: 0;}
+    .NLpreview img {width: 100%; margin: 20px 0; padding: 0;}
+    .NLleft {margin-top: 0!important;}
 
 }
 
