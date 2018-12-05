@@ -395,7 +395,7 @@ body, html {height: 100%;}
 .NLloadbutton a {text-decoration: none; color: #727F74;}
 .NLloadbutton a:hover {text-decoration: none; color: #444647;}
 
-.NLleft {float: left; padding: 0px 20px 20px 0;}
+.NLleft {float: left; padding: 0px 20px 10px 0;}
 .NLright {padding: 0;}
 
 #more {display: none;}
@@ -515,7 +515,7 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .mytabs {margin: 0 10px 0 0; padding: 10px;}
     .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
     .Cinfo {float: left; text-align: left; border-right: none;}
-    .Cform {padding-top: 0;}
+    
     .NLpreview img {width: 100%; margin: 20px 0; padding: 0;}
     .NLleft {margin-top: 0!important;}
 
@@ -524,6 +524,7 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
 @media screen and (max-width: 575px) and (min-width: 0) {
      .mycard2 {order: 2; text-align: left;}
      .mycard2 .button {float: left;}
+    .Cform {padding-top: 0;}
 }
 
 @media screen and (max-width: 320px) and (min-width: 0) {
