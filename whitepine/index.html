@@ -107,7 +107,9 @@
           
       </header>
 
-    <div class="parallax"></div> 
+    <div class="parallax">
+        <img src="images/logo-1.png" class="headerlogo" alt="logo">
+    </div> 
     
 <main role="main">
 <div class="wrapper">
@@ -290,6 +292,19 @@
                 </div>
             </div>
         </div>
+      
+      
+<!--  TEST CODE    -->
+<div class="container">
+  <h3>Tabs With Dropdown Menu</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+    
+      
                     
    
     
@@ -390,7 +405,7 @@ $(window).on('scroll',function(){
     var stop = Math.round($(window).scrollTop());
     console.log(stop);
 
-    if (stop > 500) {
+    if (stop > 140) {
         $('.myNavbar').addClass('past-main');
     } else {
         $('.myNavbar').removeClass('past-main');

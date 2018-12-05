@@ -54,11 +54,11 @@ a {text-decoration: none;}
 
 /*  FONT STYLES  */
 #section2 .font {margin: 30px 0 5px 0 ; border: none;}
-#section2 .comment {margin: 5px 0 0 2; border: none;}
+#section2 .comment {margin: 5px 0 0 2px; border: none;}
 
 
 /*  LOGO STYLES  */
-#logo {width: 240px; float: left; padding: 10;}
+#logo {width: 240px; float: left; padding: 10px;}
 #fav {float: left; padding: 0 30px 10px 0;}
 #section3 h6 {float: left; width: 310px; margin: 0 10px 10px 0;}
 #section3-1 {float: left; width: 300px;}
@@ -95,9 +95,9 @@ a {text-decoration: none;}
 
 /*  UNORDERED LIST STYLES  */
 
-ul {border-left: 6px solid #727F74; margin-left: 20px;}
+/*ul {border-left: 6px solid #727F74; margin-left: 20px;}*/
 
-ul li {list-style: none; margin: 0 0 -5 -20;}
+ul li {list-style: none; margin: 0;}
 
 ul h6 a, ul h4 a {font-weight: 700; color: #727F74;} 
 h6 a {font-weight: 700; color: #727F74;}
@@ -116,7 +116,7 @@ h6 a:hover, h4 a:hover {text-decoration: none; font-weight: 700; color: #B6BDCB;
 
 
 /*  ICON STYLES  */
-#icon {margin: 10; width: 60px;} 
+#icon {margin: 10px; width: 60px;} 
 
 
 
@@ -194,11 +194,6 @@ body, html {height: 100%;}
     background-image: url("../images/toggle1.png");
     margin: 5px;
 }
-.navbar-light .navbar-toggler {
-    color: none;
-    border-color: none;
-}
-
 
 
 /*  Header Image  */
@@ -209,53 +204,27 @@ body, html {height: 100%;}
 
 /*  Tabs Styles  */
 
-.tabposition {
-/*    position: absolute; */
-    margin-top: -37px;
-}
 
-.activetab {
-    background-color: white;
-}
-
-.notactive {
-    background-color: white; 
-    opacity: .6;
-}
-
-.mytabs {
+.Imytabs {
     margin: 0 20px 0 0; 
     padding: 10px 50px 0 50px; 
     border-radius: 2px;
     text-decoration: none;
 }
 
-#myTablist h3:hover {
-    color: #727F74;
-}
-
-#myTablist h3 {
-    text-decoration: none;
-    color: black;
-    padding-bottom: 0;
-}
-
-
+#myTablist {margin-top: -37px;}
+#myTablist h3 {text-decoration: none; color: black; padding-bottom: 0;}
+#myTablist h3:hover {color: #727F74;}
 #myTabContent, #popular {min-height: 200px; padding: 0!important; margin: 0!important;}
 
-
-
-
-
-
-
-
+.home-tabs .nav-tabs .nav-item .nav-link {background-color: white; opacity: .6;} 
+.home-tabs .nav-item.show .nav-link, .home-tabs .nav-tabs .nav-link.active {color: #495057; background-color: white; opacity: 1; border-color: white;}
+.home-tabs .nav-tabs .nav-link:focus, .home-tabs .nav-tabs .nav-link:hover {border-color: white;}  
 
 
 /*  Tab Cards  */
 
 .popularcard {
-/*    width: 30%;*/
     float: left;
     margin: 0!important;
     padding: 0px;
@@ -345,9 +314,9 @@ body, html {height: 100%;}
 
 .parallax { 
     /* The image used */
-    background-image: url("../images/headerimg.png");
+    background-image: url("../images/header.jpg");
     /* Set a specific height */
-    min-height: 780px;} 
+    min-height: 680px;} 
 
 .parallax {
     /* Create the parallax scrolling effect */
@@ -357,6 +326,15 @@ body, html {height: 100%;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax .headerlogo {
+    width: 300px; 
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    margin-top: -50px;
+    margin-left: -150px;
 }
 
 
@@ -504,21 +482,32 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
 
 @media screen and (max-width: 1024px) and (min-width: 0) {
    
-    .mytabs {margin: 0 15px 0 0; padding: 10px 20px;}
+    .Imytabs {margin: 0 15px 0 0; padding: 10px 20px;}
     .faqtab #faqcolorbox {}
     .faqtab .faqtext {padding: 20px;}
     .myNavbar .search {display: none;}
 
+    .parallax { 
+    /* The image used */
+    background-image: url("../images/header.jpg");
+    /* Set a specific height */
+    min-height: 600px;
+    width: 100%;}
 }
 
 @media screen and (max-width: 768px) and (min-width: 0) {
-    .mytabs {margin: 0 10px 0 0; padding: 10px;}
+    .Imytabs {margin: 0 10px 0 0; padding: 10px;}
     .weatherupdates .col-md-7 {border-left: none; padding: 30px 0 0 10px;}
     .Cinfo {float: left; text-align: left; border-right: none;}
-    
     .NLpreview img {width: 100%; margin: 20px 0; padding: 0;}
     .NLleft {margin-top: 0!important;}
 
+    .parallax { 
+    /* The image used */
+    background-image: url("../images/header.jpg");
+    /* Set a specific height */
+    min-height: 580px;
+    width: 100%;}
 }
 
 @media screen and (max-width: 575px) and (min-width: 0) {
@@ -528,6 +517,25 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
 }
 
 @media screen and (max-width: 320px) and (min-width: 0) {
+    .parallax { 
+    /* The image used */
+    background-image: url("../images/header.jpg");
+    /* Set a specific height */
+    min-height: 440px;
+    width: 100%;}
+    
+    .parallax .headerlogo {
+    width: 240px; 
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    margin-top: -100px;
+    margin-left: -120px;}
+
+    .Cinfo {padding: 20px;}
+    .Cform {padding: 20px;}
+    
+    .NLpreview {padding: 20px 10px;}
     
 }
 
