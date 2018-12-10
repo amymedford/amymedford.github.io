@@ -300,11 +300,11 @@ body, html {height: 100%;}
 
 /*  Cards Styles  */
 
-.mycard {background-color: #738498; height: 360px; padding: 100px 0 100px 0;}
+.mycard {background-color: #738498; height: auto; padding: 150px 0 150px 0;}
 .mycard h1 {color: white; padding: 0; margin: 0px 30px 30px 30px;}
 .mycard h6 {margin: 0 30px; padding:  0; color: white;}
-.mycardimage {width: 100%; height: 100%; background-size: cover;}
-.mycard2 {height: 360px; background-color: #727F74; text-align: right;}
+.mycardimage {width: 100%; height: 100%; }
+.mycard2 {height: auto; background-color: #727F74; text-align: right;}
 .mycard .button {margin-bottom: 0;}
 .mycard2 .button {float: right; margin-bottom: 0;}
 

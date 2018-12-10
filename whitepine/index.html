@@ -118,16 +118,24 @@
             
      <div class="row home-tabs">
         <nav class="col">  
-           <div class="nav nav-tabs tabposition" id="myTablist" role="tablist">
+           <ul class="nav nav-tabs Itabposition" id="myTablist" role="tablist">
               
-              <a data-toggle="tab" class="active nav-link activetab mytabs" id="map-tab" href="#map" role="tab" aria-controls="map" aria-selected="true"><h3>Maps</h3></a>
-                    
-              <a class="nav-link notactive mytabs" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular spots" aria-selected="false"><h3>Popular Spots</h3></a>
-                  
-              <a class="nav-link notactive mytabs" id="weather-tab" data-toggle="tab" href="#weather" role="tab" aria-controls="weather updates" aria-selected="false"><h3>Weather Updates</h3></a>
-                  
-              <a class="nav-link notactive mytabs" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false"><h3>FAQ</h3></a>
-           </div>
+              <li class="nav-item">
+              <a class="active nav-link Imytabs" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false"><h3>Popular Spots</h3></a>
+              </li> 
+               
+              <li class="nav-item">
+              <a data-toggle="tab" class="nav-link Iactivetab Imytabs" id="map-tab" href="#map" role="tab" aria-controls="map" aria-selected="true"><h3>Maps</h3></a>
+              </li>
+              
+              <li class="nav-item">
+              <a class="nav-link Imytabs" id="weather-tab" data-toggle="tab" href="#weather" role="tab" aria-controls="weather" aria-selected="false"><h3>Weather Updates</h3></a>
+              </li> 
+              
+              <li class="nav-item">
+              <a class="nav-link Imytabs" id="faq-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false"><h3>FAQ</h3></a>
+              </li>
+           </ul>
         </nav> 
      </div>
       
@@ -135,25 +143,9 @@
      <div class="row">
         <div class="col myCol">
             <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade in active" id="map" role="tabpanel" aria-labelledby="map">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <img src="images/map1.jpg" alt="map" id="mapimg">
-                            </div>
-                            <div id="mapinfo" class="col-lg-6">
-                                <h2>Park Maps</h2>
-                                <h6>Take a look at our park map, where you will find trails, campsites, visitor centers, points of interest, and more. Click one of the buttons to filter the information.</h6>             
-
-                                <a href="#" class="button1"><h4>Trails</h4></a><br><br>
-                                <a href="#" class="button1"><h4>Campsites</h4></a><br><br>
-                                <a href="#" class="button1"><h4>Visitor Centers</h4></a><br><br>
-                                <a href="#" class="button1"><h4>See More</h4></a><br><br>
-                            </div>   
-                        </div>
-                    </div>
                     
                 
-                    <div class="row tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular spots">
+                    <div class="active row tab-pane" id="popular" role="tabpanel" aria-labelledby="popular">
                         
                         <div class="card-deck NLdeck">
 
@@ -185,8 +177,28 @@
                           </div>
                         </div>
                     </div>
+                
+                
+                    <div class="tab-pane" id="map" role="tabpanel" aria-labelledby="map">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="images/map1.jpg" alt="map" id="mapimg">
+                            </div>
+                            <div id="mapinfo" class="col-lg-6">
+                                <h2>Park Maps</h2>
+                                <h6>Take a look at our park map, where you will find trails, campsites, visitor centers, points of interest, and more. Click one of the buttons to filter the information.</h6>             
+
+                                <a href="#" class="button1"><h4>Trails</h4></a><br><br>
+                                <a href="#" class="button1"><h4>Campsites</h4></a><br><br>
+                                <a href="#" class="button1"><h4>Visitor Centers</h4></a><br><br>
+                                <a href="#" class="button1"><h4>See More</h4></a><br><br>
+                            </div>   
+                        </div>
+                    </div>
+                
+                
                     
-                    <div class="tab-pane fade weatherupdates" id="weather" role="tabpanel" aria-labelledby="weather updates">
+                    <div class="tab-pane weatherupdates" id="weather" role="tabpanel" aria-labelledby="weather">
                         <div class="row">
                         
                             <div class="col-md-5">
@@ -250,7 +262,7 @@
                     </div>
                     
                     
-                    <div class="tab-pane fade faqtab" id="faq" role="tabpanel" aria-labelledby="faq">
+                    <div class="tab-pane faqtab" id="faq" role="tabpanel" aria-labelledby="faq">
                         <div class="row">
                                 
                                 <div class="col-md-6 faqtext">
@@ -292,18 +304,8 @@
                 </div>
             </div>
         </div>
-      
-      
-<!--  TEST CODE    -->
-<div class="container">
-  <h3>Tabs With Dropdown Menu</h3>
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
-</div>
-    
+
+
       
                     
    
@@ -377,7 +379,7 @@
         
     </div>
       <div class="row black">
-            <h4>Copyright by <a href="../index.html">Amy Medford</a>  -  Fall 2018 Webi 2023 - All images from <a href="https://unsplash.com/">unsplash.com</a>. Used with permission.</h4>
+            <h4>Copyright by <a href="../index.html">Amy Medford</a>  -  MCTC Webi 2023 - All images from <a href="https://unsplash.com/">unsplash.com</a>. Used with permission.</h4>
       </div>
 </footer>
     
