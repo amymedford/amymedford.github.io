@@ -303,13 +303,13 @@ body, html {height: 100%;}
 .mycard {background-color: #738498; height: auto; padding: 150px 0 150px 0;}
 .mycard h1 {color: white; padding: 0; margin: 0px 30px 30px 30px;}
 .mycard h6 {margin: 0 30px; padding:  0; color: white;}
-.mycardimage {width: 100%; height: 100%; }
+.mycardimage {width: auto; height: 460px; min-height: 100%; }
 .mycard2 {height: auto; background-color: #727F74; text-align: right;}
 .mycard .button {margin-bottom: 0;}
 .mycard2 .button {float: right; margin-bottom: 0;}
+.NLimg2 {width: auto; height: 460px; min-width: 100%; max-width: 100%;}
 
-
-
+/*width: 570px;*/
 /* Background Image - Content Scrolls Over */
 
 .parallax { 
@@ -462,11 +462,12 @@ footer a {text-decoration: none; font-size: 16px; color: white;}
 footer a:hover {color: #727F74; text-decoration: none;}
 footer .black a {font-size: 10px;}
 
-footer .col-md-5 img {width: 20px; height: auto; margin: 6px 15px 6px 6px;}
+footer .col-md-5 img {width: 20px; height: auto; margin: 8px 15px 10px 6px;}
 
 
 footer .black {padding: 0; margin: 20px 0 0 0; background-color: #303233;}
 footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
+
 
 
 
@@ -501,7 +502,9 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .Cinfo {float: left; text-align: left; border-right: none;}
     .NLpreview img {width: 100%; margin: 20px 0; padding: 0;}
     .NLleft {margin-top: 0!important;}
-
+    .mycardimage, .NLimg2 {height: 240px;}
+    .mycard {padding: 80px 20px;}
+    .mycard2 {padding: 80px 20px;}
     .parallax { 
     /* The image used */
     background-image: url("../images/header.jpg");
@@ -510,9 +513,12 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     width: 100%;}
 }
 
+
 @media screen and (max-width: 575px) and (min-width: 0) {
-     .mycard2 {order: 2; text-align: left;}
-     .mycard2 .button {float: left;}
+    .mycard {padding: 50px 20px;}
+    .mycard2 {order: 2; text-align: left; padding: 50px 20px;}
+    .mycard2 .button {float: left;}
+    .mycardimage, .NLimg2 {height: 280px; width: 100%;}
     .Cform {padding-top: 0;}
 }
 
@@ -536,7 +542,7 @@ footer .black h4 {color: white; padding: 5px 5px 0 15px; font-size: 8px;}
     .Cform {padding: 20px;}
     
     .NLpreview {padding: 20px 10px;}
-    
+    .mycardimage, .NLimg2 {height: 240px; width: 100%;}
 }
 
 
